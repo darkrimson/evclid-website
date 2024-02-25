@@ -1,0 +1,50 @@
+.hero {
+  padding: 0 60px 0 75px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-width: 1920px;
+
+  .hero__container {
+    border-radius: 32px;
+    padding: 100px 80px 100px 80px;
+    background: url("../../../img/hero.png") center/cover no-repeat;
+
+    .hero__content {
+      flex-direction: column;
+      justify-content: start;
+
+      .hero__title {
+        max-width: 837px;
+        font-weight: 800;
+        line-height: 121.43%;
+        font-size: 70px;
+        color: $color-white;
+
+        &:not(:last-child) {
+          margin-bottom: 26px;
+        }
+      }
+      .hero__text {
+        max-width: 790px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: $color-white;
+
+        &:not(:last-child) {
+          margin-bottom: 90px;
+        }
+      }
+
+      .hero__button {
+        max-width: 280px;
+        max-height: 78px;
+        padding: 25px 39px;
+        font-weight: 700;
+        font-size: 23px;
+        text-align: center;
+        color: $color-white;
+      }
+    }
+  }
+}

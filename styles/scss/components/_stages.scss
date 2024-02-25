@@ -1,0 +1,51 @@
+.stages {
+  margin-bottom: 100px;
+}
+
+.stages__title {
+  margin-bottom: 23px;
+}
+
+.stages__row {
+  justify-content: space-between;
+
+  .stages__column {
+    .stages__heading {
+      margin-bottom: 5px;
+      line-height: 133%;
+    }
+
+    .stages__text {
+      max-width: 758px;
+      min-height: 352px;
+      margin-bottom: 15px;
+    }
+
+    .stages__buttons {
+      gap: $gap;
+
+      .stages__button {
+        font-weight: 700;
+        font-size: 16px;
+        color: $color-white;
+      }
+
+      .stages__button--transparent {
+        padding: 15px 40px;
+        border-radius: 16px;
+        border: 1px solid $color-dark;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .stages__image {
+    overflow: hidden;
+    border-radius: 32px;
+    margin: auto 0;
+    background: url("../../../img/stages.png") center/cover no-repeat;
+    background-size: 100% auto;
+    width: 870px;
+    height: 460px;
+  }
+}

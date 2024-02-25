@@ -1,0 +1,25 @@
+.questions {
+    margin-bottom: 100px;
+}
+
+.questions__title {
+  margin-bottom: 23px;
+}
+
+.questions__row {
+    column-gap: $gap;
+  .questions__row-item {
+    border: 1px solid $color-dirty;
+    border-radius: 32px;
+    padding: 65px 65px 65px 60px;
+
+    .questions__content {
+        max-width: 450px;
+
+        .questions__row-heading {
+            line-height: 120%;
+            margin-bottom: 8px;
+        }
+    }
+  }
+}
