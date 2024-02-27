@@ -47,6 +47,7 @@
             color: $color-default;
             margin-bottom: -4px;
             background-color: currentColor;
+            transition-duration: $transition-duration;
             opacity: 0;
           }
 

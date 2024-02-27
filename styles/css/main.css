@@ -124,6 +124,7 @@ a {
   color: #ff9900;
   margin-bottom: -4px;
   background-color: currentColor;
+  transition-duration: 0.3s;
   opacity: 0;
 }
 .header .header__container .header__nav .nav__list .nav__link:hover::after {
