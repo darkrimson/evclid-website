@@ -16,7 +16,7 @@
           <span class="burger__line"></span>
         </button>
         <a href="#" class="logo header__logo" aria-label="Логотип Евклид">
-          <img class="header__image" src="img/logo.svg" alt="Логотип Евклид" />
+          <img class="header__image" src="img/logo.svg" alt="" />
         </a>
         <div class="header__menu flex">
           <nav class="nav header__nav flex">
@@ -37,20 +37,23 @@
           </nav>
           <button class="search button-reset" aria-label="Поиск">
             <svg
-              width="26"
-              height="26"
-              viewBox="0 0 26 26"
-              fill="black"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <rect
-                x="19.5138"
-                y="18.5495"
-                width="8"
-                height="2"
-                transform="rotate(45 19.5138 18.5495)"
+                width="7.56126"
+                height="1.89031"
+                transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)"
+                fill="black"
               />
-              <circle cx="11.5" cy="11.5" r="10.5" stroke-width="2" />
+              <path
+                d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+                stroke="black"
+                stroke-width="2"
+              />
             </svg>
           </button>
         </div>
@@ -66,7 +69,7 @@
               Есть над чем задуматься: базовые сценарии поведения пользователей
               и&nbsp;по&nbsp;сей день остаются уделом проектантов
             </p>
-            <button class="hero__button button-reset button">
+            <button aria-label="Кнопка заказа расчёта" class="hero__button button-reset button">
               Заказать расчёт
             </button>
           </div>
@@ -109,7 +112,7 @@
                   планирование способствует подготовке и&nbsp;реализации новых
                   принципов
                 </p>
-                <button class="about__image-button button button-reset">
+                <button aria-label="Подробнее" class="about__image-button button button-reset">
                   Подробнее
                 </button>
               </div>
@@ -168,10 +171,10 @@
                 разумеется, призваны к&nbsp;ответу.
               </p>
               <div class="stages__buttons flex">
-                <button class="stages__button button button-reset">
+                <button aria-label="Подробнее" class="stages__button button button-reset">
                   Подробнее
                 </button>
-                <button class="stages__button--transparent button button-reset">
+                <button aria-label="Договор" class="stages__button--transparent button button-reset">
                   Договор
                 </button>
               </div>
@@ -226,7 +229,7 @@
         <div class="footer__row container flex">
           <div class="footer__column-nav">
             <div class="footer__nav-content">
-              <a href="#" class="footer__logo logo">
+              <a href="#" class="footer__logo logo" aria-label="Логотип Евклид">
                 <img src="img/footer-logo.svg" alt="" class="logo__image" />
               </a>
               <ul class="footer__nav-list flex">
@@ -254,7 +257,7 @@
               </ul>
             </div>
             <div class="social flex">
-              <a href="" class="social__link">
+              <a href="" class="social__link" aria-label="Одноклассники">
                 <svg
                   class="social__link-icon"
                   width="60"
@@ -275,8 +278,8 @@
                   />
                 </svg>
               </a>
-              <a href="" class="social__link"
-                ><svg
+              <a href="" class="social__link" aria-label="Вконтакте">
+                <svg
                   class="social__link-icon"
                   width="60"
                   height="60"
@@ -294,29 +297,33 @@
           </div>
           <div class="footer__column__middle">
             <h3 class="footer__form_title title">Оставить заявку</h3>
-            <form action="post" class="footer__form flex">
+            <form action="post" class="footer__form flex" >
               <input
                 type="text"
                 placeholder="Фамилия, имя и отчество"
                 class="footer__form-input"
+                aria-label="Фамилия, имя и отчество"
               />
               <input
                 type="text"
                 placeholder="Email*"
                 class="footer__form-input"
+                aria-label="Email*"
               />
               <textarea
                 placeholder="Сообщение"
                 class="footer__form-textarea"
                 cols="30"
                 rows="4"
+                aria-label="Сообщение"
               ></textarea>
             </form>
             <div class="footer__form-button flex">
-              <button class="footer__button button">Отправить данные</button>
+              <button class="footer__button button" aria-label="Отправить данные">Отправить данные</button>
               <label class="footer__checkbox text" for="checkbox">
                 <input type="checkbox" required />
-                <span class="footer__form-span"
+                <span class="footer__form-span" aria-label="Согласие на обработку данных">
+                
                   >Согласен на обработку данных</span
                 ></label
               >

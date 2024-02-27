@@ -11,6 +11,13 @@
         .logo__image {
           margin-bottom: 25px;
         }
+
+        .footer__logo {
+          &:focus {
+            outline: 2px solid $color-default;
+            outline-offset: 5px;
+          }
+        }
       }
 
       .footer__nav-list {
@@ -24,6 +31,19 @@
             font-weight: 600;
             font-size: 18px;
             color: $color-dirty;
+
+            &:hover {
+              color: $color-default;
+            }
+
+            &:focus {
+              outline: 2px solid $color-default;
+              outline-offset: 5px;
+            }
+
+            &:active {
+              color: $color-active;
+            }
           }
         }
       }
@@ -31,6 +51,25 @@
       .social {
         justify-content: start;
         gap: 25px;
+
+        .social__link {
+          &:hover {
+            svg path {
+              fill: $color-default;
+            }
+          }
+
+          &:focus {
+            outline: 2px solid $color-default;
+            outline-offset: 5px;
+          }
+
+          &:active {
+            svg path {
+              fill: $color-active;
+            }
+          }
+        }
       }
     }
 
@@ -59,6 +98,16 @@
           line-height: 200%;
           color: $color-dirty;
           background-color: $color-graphite;
+
+          &:hover {
+            background-color: $color-dark-grey;
+            color: $color-white;
+          }
+
+          &:focus {
+            outline: none;
+            color: $color-white;
+          }
         }
       }
 
@@ -72,7 +121,15 @@
           font-weight: 700;
           font-size: 16px;
           text-align: center;
-          color: $color-white
+          color: $color-white;
+
+          &:hover {
+            background-color: $color-accent;
+          }
+
+          &:active {
+            background-color: $color-active;
+          }
         }
 
         .footer__form-span {

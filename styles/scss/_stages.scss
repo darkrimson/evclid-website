@@ -28,6 +28,14 @@
         font-weight: 700;
         font-size: 16px;
         color: $color-white;
+
+        &:hover {
+          background-color: $color-accent;
+        }
+
+        &:active {
+          background-color: $color-active;
+        }
       }
 
       .stages__button--transparent {
@@ -35,6 +43,18 @@
         border-radius: 16px;
         border: 1px solid $color-dark;
         background-color: transparent;
+
+        &:hover {
+          background-color: $color-dark-grey;
+          border: 1px solid $color-dark-grey;
+          color: $color-white;
+        }
+
+        &:active {
+          background-color: $color-dark;
+          border: 1px solid $color-dark;
+          color: $color-white;
+        }
       }
     }
   }

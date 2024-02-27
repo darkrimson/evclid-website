@@ -39,11 +39,19 @@
       .hero__button {
         max-width: 280px;
         max-height: 78px;
-        padding: 25px 39px;
+        padding: 22px 39px;
         font-weight: 700;
         font-size: 23px;
         text-align: center;
         color: $color-white;
+
+        &:hover {
+          background-color: $color-accent;
+        }
+
+        &:active {
+          background-color: $color-active;
+        }
       }
     }
   }

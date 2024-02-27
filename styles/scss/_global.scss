@@ -9,6 +9,7 @@ $color-active: #e1670e;
 $color-dirty: #cacaca;
 $color-graphite: #414141;
 $gap: 32px;
+$transition-duration: 0.3s;
 
 html {
   box-sizing: border-box;
@@ -18,6 +19,14 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: $transition-duration;
 }
 
 body {
